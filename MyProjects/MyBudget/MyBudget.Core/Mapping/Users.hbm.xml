@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="MyBudget.Core"
+                   namespace="MyBudget.Core.DataTransferObject">
+  <class name ="User" table="dbo.USERS">
+    <id name="Id" column="ID" >
+      <generator class="sequence">
+        <param name="sequence">users_seq</param>
+      </generator>
+    </id>
+    <property name="Login" column="LOGIN_NAME"/>
+    <property name="Password" column="PASSWORD"/>
+    <property name="CreateDate" column="CREATE_DATE"/>
+    <property name="FullName" column="FULL_NAME" />
+    <property name="IsActive" column="IS_ACTIVE"/>
+    <property name="Name" column="NAME"/>
+  </class>
+</hibernate-mapping>

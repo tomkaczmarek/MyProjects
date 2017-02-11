@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHubCollector", "GitHubCollector", "{636CA381-C0FA-4D7F-97A0-18FCCF898F82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyBudget", "MyBudget", "{E048ED2F-9298-46BD-871A-759040C8045D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubCollector", "MyProjects\GitHubCollectors\GitHubCollector\GitHubCollector\GitHubCollector\GitHubCollector.csproj", "{47CA8B03-0185-4204-9086-9D26A6C1AA69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubCollectorView", "MyProjects\GitHubCollectors\GitHubCollectorView\GitHubCollectorView\GitHubCollectorView\GitHubCollectorView.csproj", "{3185127B-3461-4655-B4AF-C7A61B03C2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBudget.WebSite", "MyProjects\MyBudget\MyBudget\MyBudget.WebSite.csproj", "{CE3BF511-84D3-444C-95AB-58DD7FB378F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBudget.Common", "MyProjects\MyBudget\MyBudget.Common\MyBudget.Common.csproj", "{9B7C0703-69AD-4E06-9FC9-84101EB39C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBudget.Core", "MyProjects\MyBudget\MyBudget.Core\MyBudget.Core.csproj", "{95CEAAAE-02A5-46E2-9F56-2E0E77D582D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBudget.DataOperation", "MyProjects\MyBudget\MyBudget.DataOperation\MyBudget.DataOperation.csproj", "{AAF4D2CC-7B1F-4E5C-A1F1-D94245DF68CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47CA8B03-0185-4204-9086-9D26A6C1AA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CA8B03-0185-4204-9086-9D26A6C1AA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CA8B03-0185-4204-9086-9D26A6C1AA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CA8B03-0185-4204-9086-9D26A6C1AA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3185127B-3461-4655-B4AF-C7A61B03C2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3185127B-3461-4655-B4AF-C7A61B03C2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3185127B-3461-4655-B4AF-C7A61B03C2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3185127B-3461-4655-B4AF-C7A61B03C2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3BF511-84D3-444C-95AB-58DD7FB378F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3BF511-84D3-444C-95AB-58DD7FB378F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3BF511-84D3-444C-95AB-58DD7FB378F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3BF511-84D3-444C-95AB-58DD7FB378F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7C0703-69AD-4E06-9FC9-84101EB39C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7C0703-69AD-4E06-9FC9-84101EB39C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7C0703-69AD-4E06-9FC9-84101EB39C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7C0703-69AD-4E06-9FC9-84101EB39C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CEAAAE-02A5-46E2-9F56-2E0E77D582D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CEAAAE-02A5-46E2-9F56-2E0E77D582D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CEAAAE-02A5-46E2-9F56-2E0E77D582D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CEAAAE-02A5-46E2-9F56-2E0E77D582D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF4D2CC-7B1F-4E5C-A1F1-D94245DF68CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF4D2CC-7B1F-4E5C-A1F1-D94245DF68CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF4D2CC-7B1F-4E5C-A1F1-D94245DF68CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF4D2CC-7B1F-4E5C-A1F1-D94245DF68CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47CA8B03-0185-4204-9086-9D26A6C1AA69} = {636CA381-C0FA-4D7F-97A0-18FCCF898F82}
+		{3185127B-3461-4655-B4AF-C7A61B03C2F1} = {636CA381-C0FA-4D7F-97A0-18FCCF898F82}
+		{CE3BF511-84D3-444C-95AB-58DD7FB378F8} = {E048ED2F-9298-46BD-871A-759040C8045D}
+		{9B7C0703-69AD-4E06-9FC9-84101EB39C9C} = {E048ED2F-9298-46BD-871A-759040C8045D}
+		{95CEAAAE-02A5-46E2-9F56-2E0E77D582D7} = {E048ED2F-9298-46BD-871A-759040C8045D}
+		{AAF4D2CC-7B1F-4E5C-A1F1-D94245DF68CE} = {E048ED2F-9298-46BD-871A-759040C8045D}
+	EndGlobalSection
+EndGlobal

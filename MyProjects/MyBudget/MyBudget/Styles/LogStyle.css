@@ -1,0 +1,41 @@
+﻿body {
+}
+.logBox
+{
+    height: 313px;
+    position: relative;
+    width: 362px;
+}
+.box
+{
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    background-color:#E9E9F0;
+}
+.mainLogContener
+{
+    margin: 200px 900px;
+}
+#userLogin, #userPassword
+{    
+    margin: 0 9px;
+    padding:8px;
+    width:95%;
+    font-size:16px;
+    border: 1px solid black;
+    border-radius:6px;
+    padding-bottom: 4px;
+}
+
+#logButton
+{
+    float:right;
+}
+#logLabel, #passwordLabel
+{
+    padding-bottom: 4px;
+    font-size:18px;
+}
+

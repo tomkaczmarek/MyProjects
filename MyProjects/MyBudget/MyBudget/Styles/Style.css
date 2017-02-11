@@ -1,0 +1,63 @@
+﻿body {
+    background-color:black;
+    margin:-2px;
+}
+.headMenuControlClass
+{
+    float: right;
+    margin: 0 50px;
+    position:relative;
+}
+
+.footerMenuControlClass 
+{
+
+}
+.mainTableClass
+{
+    width:100%;
+    position:relative;
+    height:100%;
+    border-collapse:collapse;
+    
+}
+.headTabelClass
+{
+    background-color:gray;
+    width:inherit;
+    border-width:0px;
+    height:50px;
+}
+.leftTableClass
+{ 
+    width:15%;
+    background-color:yellow;
+    border:none;
+    
+}
+.contentTableClass
+{
+    width:85%;
+    background-color:whitesmoke;
+}
+.footerTableClass
+{
+    background-color:lightcoral;
+    border:none;
+}
+.ulPointer
+{
+    list-style-type:none;
+}
+.contentWrapper
+{
+    height:800px;
+}
+.headerWrapper
+{
+    height:70px;
+}
+.footerWrapper
+{
+    height:35px;
+}
