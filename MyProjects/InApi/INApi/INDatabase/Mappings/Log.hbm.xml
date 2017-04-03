@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="INCommon"
+                   namespace="INCommon.DataExchange">
+  <class name ="Log" table="dbo.LOGS">
+    <id name="Id" column="ID" >
+      <generator class="sequence">
+        <param name="sequence">log_seq</param>
+      </generator>
+    </id>   
+    <property name="Status" column="STATUS"/>
+    <property name="ErrorMessage" column="MESSAGE"/>
+    <property name="HttpHeader" column="HTTP_HEADERS"/>
+    <property name="LogDate" column="LOG_DATE" />
+  </class>
+</hibernate-mapping>

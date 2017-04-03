@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="INCommon"
+                   namespace="INCommon.DataExchange">
+  <class name ="Company" table="dbo.COMPANY">
+    <id name="Id" column="ID" >
+      <generator class="sequence">
+        <param name="sequence">company_seq</param>
+      </generator>
+    </id>
+    <property name="Number" column="ID_NUMBER"/>
+    <property name="Name" column="NAME"/>
+    <property name="Street" column="STREET"/>
+    <property name="StreetNumber" column="STREET_NUMBER" />
+    <property name="PostCode" column="POST_CODE"/>
+    <property name="City" column="CITY"/>
+  </class>
+</hibernate-mapping>
