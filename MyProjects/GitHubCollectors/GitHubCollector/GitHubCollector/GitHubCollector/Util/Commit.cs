@@ -56,6 +56,8 @@ namespace GitHubCollector.Util
             set { _averageCommitPerDay = value; }
         }
 
+        public string Email { get; set; }
+
         public Commit() { }
 
     }

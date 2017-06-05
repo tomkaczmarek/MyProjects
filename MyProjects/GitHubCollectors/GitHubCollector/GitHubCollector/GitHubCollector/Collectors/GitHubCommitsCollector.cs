@@ -6,6 +6,7 @@ using LibGit2Sharp;
 using System.IO;
 using GitHubCollector.Service;
 using System.Net;
+using GitHubCollector.Model;
 
 namespace GitHubCollector.Collectors
 {
@@ -42,6 +43,7 @@ namespace GitHubCollector.Collectors
                 {
                     _commitList = new List<Git.Commit>();
                     string path = Repository.Clone(url, CreateTempPath());
+                    
 
                     using (var repository = new Repository(path))
                     {
@@ -51,11 +53,12 @@ namespace GitHubCollector.Collectors
                             {
                                 Git.Commit c = new Git.Commit()
                                 {
-                                    Committer = commit.Committer.Name,
-                                    CommitDate = commit.Committer.When.DateTime,
+                                    Committer = commit.Author.Name,
+                                    CommitDate = commit.Author.When.DateTime,
                                     Message = commit.MessageShort,
                                     BranchName = branch.FriendlyName,
-                                    CommitDateString = commit.Committer.When.DateTime.ToShortDateString()
+                                    CommitDateString = commit.Committer.When.DateTime.ToShortDateString(),
+                                    Email = commit.Author.Email                                    
                                 };
                                 _commitList.Add(c);
                             }
@@ -87,12 +90,12 @@ namespace GitHubCollector.Collectors
             var result = commitslist.GroupBy(c => new
             {
                 c.CommitDateString,
-                c.Committer
+                c.Email
             })
             .Select(g => new Git.Commit
             {
                 CommitDateString = g.Key.CommitDateString,
-                Committer = g.Key.Committer,
+                Committer = g.Key.Email,
                 CommitsCount = g.Count(),                
             })
             .ToList();
@@ -116,6 +119,11 @@ namespace GitHubCollector.Collectors
             return result;
         }
 
+        public override IList<RepositoryModel> GetRepositorys(string repository, IRepoServiceProvider service)
+        {
+            List<RepositoryModel> model = new List<RepositoryModel>();
+            return model;
+        }
         /// <summary>
         /// Get full path of repository service
         /// </summary>

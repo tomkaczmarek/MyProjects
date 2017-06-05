@@ -8,5 +8,10 @@ namespace GitHubCollector.Service
         {
             return "https://github.com";
         }
+
+        public override string GetApiUrl(string user)
+        {
+            return string.Format("{0}{1}{2}","http://api.github.com/users/", user, "/repos");
+        }
     }
 }
